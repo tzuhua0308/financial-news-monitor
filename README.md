@@ -131,7 +131,7 @@ weighted_score = FinBERT_compound × source_weight
 
 ---
 
-## 🔍 面試 QA 準備
+## 🔍 Q & A
 
 **Q：為什麼用 FinBERT 而不是 ChatGPT API？**  
 A：FinBERT 在金融情緒分類任務上有 benchmarked 的準確率（FPB dataset F1 ≈ 0.88），且可完全本地運行，無 API 費用與隱私疑慮，適合高頻批次處理。
