@@ -1,0 +1,22 @@
+# ─── 核心依賴 ─────────────────────────────────────────────────────────────────
+feedparser>=6.0          # RSS 解析
+requests>=2.31           # HTTP 請求（NewsAPI、LINE/Telegram webhook）
+APScheduler>=3.10        # 定時排程
+
+# ─── NLP ──────────────────────────────────────────────────────────────────────
+nltk>=3.8                # VADER 情緒分析（備援，輕量）
+transformers>=4.40       # FinBERT（主力）
+torch>=2.0               # FinBERT 需要 PyTorch（CPU 版即可）
+# 安裝 CPU 版 torch（較小，適合 VPS/本地）：
+# pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# ─── Alternative Data ─────────────────────────────────────────────────────────
+praw>=7.7                # Reddit API（需申請 credentials）
+
+# ─── Dashboard ────────────────────────────────────────────────────────────────
+streamlit>=1.35          # 監控 Dashboard
+pandas>=2.0              # 資料處理
+plotly>=5.0              # 互動圖表
+
+# ─── 工具 ─────────────────────────────────────────────────────────────────────
+python-dotenv>=1.0       # 從 .env 讀取 API Keys
